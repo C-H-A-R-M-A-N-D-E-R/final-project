@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <img src="img/main-bg.png" />
+    <div class="container">
+      <div class="login-main">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+        <div class="cashier">
+          <form class="form" id="cashierForm">
+            <label for="chk" aria-hidden="true">Cashier</label>
+            <input
+              class="input"
+              type="text"
+              name="username"
+              id="cashierUsername"
+              placeholder="Username"
+              required=""
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="cashierPassword"
+              placeholder="Password"
+              required=""
+            />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <div class="admin">
+          <form class="form" id="adminForm">
+            <label for="chk" aria-hidden="true" style="padding-top: -10px"
+              >Admin</label
+            >
+            <input
+              class="input"
+              type="text"
+              name="username"
+              id="adminUsername"
+              placeholder="Username"
+              required=""
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="adminPassword"
+              placeholder="Password"
+              required=""
+            />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

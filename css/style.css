@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4076ee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #000000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: 0.5s;
+  padding: 16px;
+}
+
+@media sceen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*-- Nav Admin Style --- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4076ee;
+  color: #ffffff;
+}
+
+.user-profile {
+  font-size: 20px;
+}
+
+.toggle {
+  font-size: 20px;
+  cursor: pointer;
+}
+/* --- LOG IN FORM STYLE ---- */
+
+.container {
+  float: right;
+  margin-right: 65px;
+  margin-top: 120px;
+}
+
+.login-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+}
+
+/*checkbox to switch from sign up to login*/
+#chk {
+  display: none;
+}
+
+/*Login*/
+.cashier {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+
+.cashier label {
+  margin: 25% 1;
+  font-size: 30;
+  color: #4076ee;
+}
+
+label {
+  color: #fff;
+  font-size: 1.5rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-family: "Poppins";
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  align-items: center;
+  height: 22px;
+  background: #e6e1e1;
+  padding: 7px;
+  border: none;
+  outline: none;
+  margin: -5;
+  border-radius: 4px;
+}
+
+/*Register*/
+.admin {
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-10%);
+  transition: 0.8s ease-in-out;
+}
+
+.admin label {
+  color: #4076ee;
+  transform: scale(0.5);
+}
+
+#chk:checked ~ .admin {
+  transform: translateY(-80%);
+}
+
+#chk:checked ~ .admin label {
+  transform: scale(1);
+  margin: 10% 0 1%;
+}
+
+#chk:checked ~ .cashier label {
+  transform: scale(0.5);
+  margin: -2% 0 10%;
+}
+/*Button*/
+.form button {
+  width: 100%;
+  height: 40px;
+  margin: 10px auto 10%;
+  color: #fff;
+  background: #4076ee;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.form button:hover {
+  background-color: #4076ee;
+}
+.admin button {
+  margin-top: 2px;
+}
+.cashier button {
+  margin-top: 8px;
+}
+img {
+  width: 50%;
+  max-height: 140vh;
+  float: left;
+  padding-left: 70px;
+  padding-right: 120px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #4076ee;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.13);
+}
